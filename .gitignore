@@ -1,0 +1,27 @@
+# Node.js
+node_modules
+build
+dist
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
+
+# ASP.NET / C#
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.pdb
+.vs/
+GerenciadorTarefas/.vs/
+
+# OS files
+.DS_Store
+Thumbs.db
