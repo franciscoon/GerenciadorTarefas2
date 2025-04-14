@@ -11,7 +11,6 @@ namespace Gerenciador.Application.Dto
     {
         public string Titulo {  get; set; }
         public string Descricao { get; set; }
-        public bool Concluida { get; set; }
         public DateTime? DataConclusao { get; set; }
         public EStatus Status { get; set; }
     }
