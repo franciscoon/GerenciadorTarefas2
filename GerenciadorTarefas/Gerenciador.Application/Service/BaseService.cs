@@ -31,8 +31,14 @@ namespace Gerenciador.Application.Service
         {
             var entity = await _repository.GetByIdAsync(id);
 
-            return entity == null ? default : _mapper.Map<TDto>(entity);
+            if (entity == null)
+            {
+                throw new Exception("Objeto não encontrado");
+            }
+
+            return _mapper.Map<TDto>(entity);
         }
+
 
         public virtual async Task<TDto> CreateAsync(TCreateDto dto)
         {
