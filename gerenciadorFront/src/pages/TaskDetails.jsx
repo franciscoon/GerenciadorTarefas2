@@ -45,6 +45,7 @@ export function TaskDetails(){
           <p><strong>Título:</strong> {tarefa.titulo}</p>
           <p><strong>Descrição:</strong> {tarefa.descricao}</p>
           <p><strong>Status:</strong> {formatStatus(tarefa.status)}</p>
+          <p><strong>Data de Criação:</strong> {formatDate(tarefa.dataCriacao)}</p>
           <p><strong>Data de Conclusão:</strong> {formatDate(tarefa.dataConclusao)}</p>
     
           <button className="botao-voltar-home" onClick={() => navigate("/")}>

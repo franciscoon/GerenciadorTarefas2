@@ -49,7 +49,8 @@ export function TaskFormModal({tarefa, onTarefaCriadaOuEditada, onClose}){
                     titulo,
                     descricao,
                     dataConclusao: dataConclusao || null,
-                    status
+                    status,
+                    dataCriacao: new Date()
                 });
 
                 toast.success("Tarefa criada com Sucesso !");

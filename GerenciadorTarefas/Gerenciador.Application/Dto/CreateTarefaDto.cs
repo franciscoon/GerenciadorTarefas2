@@ -15,6 +15,7 @@ namespace Gerenciador.Application.Dto
         public string Titulo {  get; set; }
         public string Descricao { get; set; }
         public DateTime? DataConclusao { get; set; }
+        public DateTime DataCriacao { get; set; }
         public EStatus Status { get; set; }
     }
 }
